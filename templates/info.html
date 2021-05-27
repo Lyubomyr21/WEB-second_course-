@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>User page</title>
+<link rel="stylesheet" href="../static/css/info.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+        <div class="nav">
+            <a id="logout"  onclick="LogOut()"  style="text-align:right;cursor:pointer;" >Log Out</a>
+            <a id="user" onclick="window.location.href='/info'" style="text-align:right;cursor:pointer;" >{{username}}</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+                <div class="image"> <img src="static/img/Me2.jpg"  width="390" height="360" > </div>
+                <div class="Text">
+                    <h4 class="mb-0 mt-0">UserName - {{username}}</h4>
+                    <h4 class="mb-0 mt-0">Email - {{email}}</h4>
+                    <h4 class="mb-0 mt-0">Surname - {{surname}}</h4>
+                </div>
+            <form action="/menu">
+                <button>Cancel</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="../static/js/menu.js"></script>
+</html>
